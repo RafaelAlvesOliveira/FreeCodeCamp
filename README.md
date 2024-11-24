@@ -8,3 +8,4 @@ Os projetos apresentados foram feitos utilizando HTML e CSS.
 Lista com os projetos concluídos:
 1. CatPhotoApp
 2. CamperCafe
+3. CSS Color Markers
