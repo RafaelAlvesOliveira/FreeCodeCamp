@@ -14,9 +14,22 @@
         </header>
         <form action="" id="survey-form" class="survey-form">
             <fieldset class="survey-form-info-personal">
-                <label for="name-label" id="name-label"><input type="text"></label>
-                <label for="email-label" id="email-label"><input type="text"></label>
-                <label for="number-label" id="number-label"><input type="text"></label>
+                <label for="name-label" id="name-label">Name*: <input id="name" value="name" type="text" placeholder="Name" minlength="3" required></label>
+                <label for="email-label" id="email-label">E-mail*: <input id="email" value="email" type="email" placeholder="E-mail" required></label>
+                <label for="number-label" id="number-label">Age* (Optional): <input id="number" value="age" type="number" placeholder="Age" min="1" max="99" required></label>
+                <p>Which option best describes your current role?</p>
+                <select name="professional" id="dropdown" class="survey-form-info-personal-function-selected">
+                    <option disabled select value></option>
+                    <option value="student">Student</option>
+                    <option value="job">Full time job</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+                <p>Would your recommend freeCodeCamp to a friend?</p>
+                <label for="type-avaliation"><input name="recommend" type="radio" class="survey-form-info-avaliation" value="definitely" id="definitely">Definitely</label>
+                <label for="type-avaliation"><input name="recommend" type="radio" class="survey-form-info-avaliation" value="maybe" id="maybe">Maybe</label>
+                <label for="type-avaliation"><input name="recommend" type="radio" class="survey-form-info-avaliation" value="not-sure" id="not-sure">Not sure</label>
             </fieldset>
         </form>
     </div>
